@@ -1,68 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV - Danna Sarai Morales Ojeda</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <main>
-        <section id = "Acerca de mi">
-            <h1> Danna Sarai Morales Ojeda </h1>
-            <img src="/img/danna.png" alt="Fotografia de Danna Morales"><br>
-            <br>
-            <b> Información personal: </b>
-            <ul>
-                <li> Sobre mi:  </li>
-                Estudiante de Ingeniería en Software en la Escuela Politécnica Nacional, cursando el quinto semestre. Interesada en el desarrollo de soluciones digitales, videojuegos y experiencia de usuario. Me destaco por mi compromiso, creatividad y apertura para aprender nuevas tecnologías.
-            </ul>
-        </section>
-        <section id = "Habilidades">
-            <b> Habilidades: </b>
-            <ul>
-                <li> Habilidades: </li>
-                        Trabajo en equipo <br>
-                        Comunicación efectiva <br>
-                        Adaptabilidad y disposición al aprendizaje <br>
-                        <br>
-                <li> Herramientas: </li>
-                        Python, Java, C++ (básico) <br>
-                        SQL*Plus (Oracle 19c CMD) <br>
-                        Visual Studio Code, IntelliJ <br>
-                        Figma, GitHub (básico) <br>
-                        Radmin VPN, NetManager <br>
-                        <br>
-                <li> Iidiomas: </li>
-                <li> Formacion: </li>
-            </ul>
-        </section>
-        <section id = "Portafolio">
-            Portafolio:
-            <ul>
-                <li> Proyectos: </li>
-            </ul>
-        </section>
-        <section id = "Experiencia">
-            Experiencia:
-            <ul>
-                <li> Experiencia: </li> 
-            </ul>
-        </section>
-        <section id = "Certificados">
-            Certificados:
-            <ul>
-                <li> Certificados: </li> 
-            </ul>
-        </section>
-        <section id ="Contacto">
-            Contactos:
-            <ul>
-                <li> 📞 +593 960546655 </li>
-                <li> 📧 saritylj@gmail.com </li>
-                <li> <a href="https://sarityl.carrd.co">🌐 https://sarityl.carrd.co</a></li>
-                <li> 📍 Quito, Ecuador </li>
-            </ul>
-        </section>
-    </main>
+    <div class="cv">
+        <header class="cv-header">
+            <div class="cv-photo">
+                <!-- OJO: pon danna.png en la misma carpeta que este HTML -->
+                <img src="danna.png" alt="Fotografía de Danna Morales">
+            </div>
+
+            <div class="cv-main-info">
+                <h1>Danna Sarai Morales Ojeda</h1>
+                <p class="cv-role">Estudiante de Ingeniería en Software</p>
+                <p class="cv-summary">
+                    Estudiante de Ingeniería en Software en la Escuela Politécnica Nacional, cursando el Sexto semestre.
+                    Interesada en el desarrollo de soluciones digitales, videojuegos y experiencia de usuario. Me destaco
+                    por mi compromiso, creatividad y apertura para aprender nuevas tecnologías.
+                </p>
+            </div>
+        </header>
+
+        <main class="cv-body">
+            <!-- Columna izquierda -->
+            <section class="cv-column">
+                <h2>Información personal</h2>
+                <ul class="cv-list">
+                    <li><strong>Sobre mí</strong></li>
+                    <p>
+                        Estudiante de Ingeniería en Software en la Escuela Politécnica Nacional, cursando el Sexto semestre.
+                        Interesada en el desarrollo de soluciones digitales, videojuegos y experiencia de usuario. Me destaco
+                        por mi compromiso, creatividad y apertura para aprender nuevas tecnologías.
+                    </p>
+                </ul>
+
+                <h2>Contacto</h2>
+                <ul class="cv-list">
+                    <li>📞 +593 960546655</li>
+                    <li>📧 <a href="mailto:saritylj@gmail.com">saritylj@gmail.com</a></li>
+                    <li>🌐 <a href="https://sarityl.carrd.co" target="_blank">sarityl.carrd.co</a></li>
+                    <li>📍 Quito, Ecuador</li>
+                </ul>
+            </section>
+
+            <!-- Columna derecha -->
+            <section class="cv-column">
+                <h2>Habilidades</h2>
+
+                <h3>Habilidades blandas</h3>
+                <ul class="cv-list">
+                    <li>Trabajo en equipo</li>
+                    <li>Comunicación efectiva</li>
+                    <li>Adaptabilidad y disposición al aprendizaje</li>
+                </ul>
+
+                <h3>Herramientas</h3>
+                <ul class="cv-list">
+                    <li>Python, Java, C++ (básico)</li>
+                    <li>SQL*Plus (Oracle 19c CMD)</li>
+                    <li>Visual Studio Code, IntelliJ</li>
+                    <li>Figma, GitHub (básico)</li>
+                    <li>Radmin VPN, NetManager</li>
+                </ul>
+
+                <h3>Idiomas</h3>
+                <ul class="cv-list">
+                    <li>Español (nativo)</li>
+                    <li>Inglés B1</li>
+                </ul>
+
+                <h2>Formación</h2>
+                <ul class="cv-list">
+                    <li>
+                        Ingeniería en Software – Escuela Politécnica Nacional<br>
+                        <span class="cv-muted">Sexto semestre</span>
+                    </li>
+                </ul>
+
+                <h2>Portafolio</h2>
+                <ul class="cv-list">
+                    <li>Proyecto 1 </li>
+                    <li>Proyecto 2 </li>
+                    <!-- Seguir completando -->
+                </ul>
+
+                <h2>Experiencia</h2>
+                <ul class="cv-list">
+                    <li>Por el momento sin experiencia laboral formal.</li>
+                    <li>Proyectos académicos y personales relacionados con desarrollo de software.</li>
+                </ul>
+
+                <h2>Certificados</h2>
+                <ul class="cv-list">
+                    <li>Agregar Certificados</li>
+                </ul>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
